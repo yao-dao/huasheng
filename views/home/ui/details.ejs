@@ -1,0 +1,44 @@
+<div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    查看详情
+                </h4>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                    <td align='right'>图片:</td>
+                    <td>
+                        <img src="<%-row.goodsimg%>" width='60px' height='60px'/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>商品简介:</td>
+                    <td><%-row.goodsname%></td>
+                </tr>
+                <tr>
+                    <td>好评度:</td>
+                    <td><%-row.praise%></td>
+                </tr>
+                <tr>
+                    <td align='right'>商品介绍:</td>
+                    <td><%-row.goodsintro%></td>
+                </tr>
+                <tr>
+                    <td align='right'>商品价格:</td>
+                    <td><%-row.price%></td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
