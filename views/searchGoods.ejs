@@ -17,6 +17,8 @@ searchForm.keywords.value="<%-keywords%>";
 			    </tr>
 			    <tr>
 			    	<td align='right'>
+			    		<button type="button" class="btn btn-danger btn-xs">立即购买</button>&nbsp;
+			    		<a href="/pay/putshopping?goodsid=<%-row.goodsid%>" target='_blank'><button type="button" class="btn btn-danger btn-xs">放入购物车</button></a>&nbsp;
 			    		价格:<%-row.price%>&nbsp;
 			    		好评度:<%-row.praise%>&nbsp;
 			    		<button type="button" class="btn btn-danger btn-xs">go</button>&nbsp;
@@ -29,5 +31,7 @@ searchForm.keywords.value="<%-keywords%>";
 	      <div class="col-sm-6">地图</div>
 	      <div class="col-sm-1"></div>
 </div>
+<!-- 模态框（Modal） -->
+	    <% include ui/login %>
 </body>
 </html>
